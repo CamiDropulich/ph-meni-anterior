@@ -1,0 +1,16 @@
+/* -------------------- Separador -------------------- */
+@media screen and (max-width: 720px){
+    .separador-contenedor{
+        height: auto;
+        margin-bottom: 5px;
+    }
+    
+    .separador-txt-principal{
+        padding-top: 15px;
+        font-size: 22px;
+    }
+    
+    .separador-txt-secundario{
+        font-size: 16px;
+    }
+}

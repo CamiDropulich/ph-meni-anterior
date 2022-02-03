@@ -1,0 +1,28 @@
+/* -------------- Etiquetas generales -------------- */
+body{
+    overflow-x: hidden;
+}
+
+/* -------------- Galería de imágenes -------------- */
+#galeria-container{
+    width: 100vw;
+    height: auto;
+}
+
+/* ----------------- Contenedores  ----------------- */
+.imagenes-container{
+    position: absolute;
+    width: 16.66vw;
+    height: 50vh;
+}
+
+.imagenes{
+    float: left;
+    position: relative;
+    width: 16.66vw;
+    height: 50vh;
+}
+
+#arreglar-galeria{
+    height: 100vh;
+}

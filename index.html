@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Franco Menichelli - Photography</title>
+
+    <!-- CSS --->
+    <link rel="stylesheet" href="./css/ajustes-generales.css">
+    <link rel="stylesheet" href="./css/animacion-precarga.css">
+    <link rel="stylesheet" href="./css/menu-adaptable-lateral.css">
+    <link rel="stylesheet" href="./css/menu-adaptable-lateral-media-queries.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/banner-media-queries.css">
+    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="stylesheet" href="./css/perfil-media-queries.css">
+    <link rel="stylesheet" href="./css/galeria-animada.css">
+    <link rel="stylesheet" href="./css/galeria-animada-media-queries.css">
+    <link rel="stylesheet" href="./css/barra-movil.css">
+    <link rel="stylesheet" href="./css/comparador-imagenes.css">
+    <link rel="stylesheet" href="./css/selector-imagenes.css">
+    <link rel="stylesheet" href="./css/selector-imagenes-media-queries.css">
+    <link rel="stylesheet" href="./css/separador.css">
+    <link rel="stylesheet" href="./css/separador-media-queries.css">
+    <link rel="stylesheet" href="./css/pie-pagina.css">
+    <link rel="shortcut icon" href="./imagenes/iconos/icono.ico">
+
+    <!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/menu-adaptable-lateral.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/galeria-animada.js"></script>
+    <script src="./js/comparador-selector-imagenes.js"></script>
+    <script src="./js/animacion-precarga.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <!-- Precarga -->
+        <div id="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Barra de navegación -->
+        <nav id="nav-bar">
+            <div id="nav-bar-phone">
+                <ul id="nav-name">
+                    <li id="nav-name-1">Franco Menichelli</li>
+                    <li id="nav-name-2">Photography</li>
+                </ul>
+    
+                <div id="nav-btn-menu">
+                    <canvas id="lienzo1" width="30" height="30">
+                        Menú
+                    </canvas>
+                </div>
+            </div>
+    
+            <ul id="nav-btn-container">
+                <li class="nav-btn"><a href="#inicio" class="nav-link" onclick="dibujarBordeMenu(0)">Inicio</a></li>
+                <li class="nav-btn"><a href="#sobre-mi" class="nav-link" onclick="dibujarBordeMenu(1)">Sobre mí</a></li>
+                <li class="nav-btn"><a href="#portfolio" class="nav-link" onclick="dibujarBordeMenu(2)">Portfolio</a></li>
+                <li class="nav-btn"><a href="#contacto" class="nav-link" onclick="dibujarBordeMenu(3)">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner de imágenes - versión M -->
+    <a name="inicio"></a>
+    <div id="banner-contenedor">
+        <div id="banner-eventos-contenedor">
+            <div class="banner-img banner-eventos" id="eventos-1"></div>
+            <div class="banner-img banner-eventos" id="eventos-2"></div>
+            <div class="banner-img banner-eventos" id="eventos-3"></div>
+        </div>
+
+        <div id="banner-deportes-contenedor">
+            <div class="banner-img banner-deportes" id="deportes-1"></div>
+            <div class="banner-img banner-deportes" id="deportes-2"></div>
+            <div class="banner-img banner-deportes" id="deportes-3"></div>
+        </div>
+
+        <div class="banner-img" id="banner-bordes"></div>
+
+        <div id="banner-retratos-contenedor">
+            <div class="banner-img banner-retratos" id="retratos-1"></div>
+            <div class="banner-img banner-retratos" id="retratos-2"></div>
+            <div class="banner-img banner-retratos" id="retratos-3"></div>
+        </div>
+
+        <div style="height: 100vh"></div>
+    </div>
+
+    <!-- Sobre mí -->
+    <a name="sobre-mi"></a>
+    <div id="perfil-contenedor">
+        <div id="perfil-imagen">
+            <img src="./imagenes/perfil/perfil.jpg">
+        </div>
+        <div id="perfil-informacion">
+            <h2>¡Bienvenidos a mi página!</h2>
+            <p>Soy Franco Menichelli, fotógrafo y filmmaker</p>
+            <p>Aquí podrás encontrar mis servicios y ver toda mi galería de trabajos</p>
+            <p>Si te interesa contratarme, comunicate conmigo!</p>
+        </div>
+    </div>
+
+    <!-- Separador - Retratos -->
+    <div class="separador-contenedor">
+        <h2 class="separador-txt-principal">Retratos</h2>
+        <p class="separador-txt-secundario">&nbsp;</p>
+    </div>
+
+    <!-- Galería animada -->
+    <a name="portfolio"></a>
+    <div id="galeria-container">
+        <!-- Cominezo de la 1ra fila - 18 fotos en total -->
+        <div class="imageness-container">
+            <div class="imagenes" id="img-1">
+                <div class="imagenes" id="img-2">
+                    <div class="imagenes" id="img-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-4">
+                <div class="imagenes" id="img-5">
+                    <div class="imagenes" id="img-6"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-7">
+                <div class="imagenes" id="img-8">
+                    <div class="imagenes" id="img-9"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-10">
+                <div class="imagenes" id="img-11">
+                    <div class="imagenes" id="img-12"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-13">
+                <div class="imagenes" id="img-14">
+                    <div class="imagenes" id="img-15"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-16">
+                <div class="imagenes" id="img-17">
+                    <div class="imagenes" id="img-18"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Comienzo de la 2da fila - 18 fotos en total -->
+
+        <div class="imgs-container">
+            <div class="imagenes" id="img-19">
+                <div class="imagenes" id="img-20">
+                    <div class="imagenes" id="img-21"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-22">
+                <div class="imagenes" id="img-23">
+                    <div class="imagenes" id="img-24"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-25">
+                <div class="imagenes" id="img-26">
+                    <div class="imagenes" id="img-27"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-28">
+                <div class="imagenes" id="img-29">
+                    <div class="imagenes" id="img-30"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-31">
+                <div class="imagenes" id="img-32">
+                    <div class="imagenes" id="img-33"></div>
+                </div>
+            </div>
+        </div>
+        <div class="imgs-container">
+            <div class="imagenes" id="img-34">
+                <div class="imagenes" id="img-35">
+                    <div class="imagenes" id="img-36"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="arreglar-galeria"></div>
+
+    <a name="comparador"></a>
+    <!-- Separador - Comparador -->
+    <div class="separador-contenedor">
+        <h2 class="separador-txt-principal">¡Edita las fotos!</h2>
+        <p class="separador-txt-secundario">Elige alguna de las imágenes que hay debajo y desliza la barra para ver los cambios realizados en la edición</p>
+    </div>
+
+    <!-- Comparador de imágenes -->
+    <div style="height: 20px;"></div>
+
+    <div id="comparador-imagenes">
+        <div id="imagen-editada"></div>
+        <div id="txt-editada"></div>
+        <div id="imagen-original"></div>
+        <div id="txt-original"></div>
+        <div id="indicador"></div>
+    </div>
+
+    <div id="barra-movil-contenedor">
+        <div id="barra-movil"></div>
+    </div>
+
+    <div id="selector-imagenes-contenedor">
+        <figure id="selector-imagenes">
+            <img src="./imagenes/selector/foto-01-editada.jpg" class="selector-img" onclick="cambiarImagenComparador(1)">
+            <img src="./imagenes/selector/foto-02-editada.jpg" class="selector-img" onclick="cambiarImagenComparador(2)">
+            <img src="./imagenes/selector/foto-03-editada.jpg" class="selector-img" onclick="cambiarImagenComparador(3)">
+            <img src="./imagenes/selector/foto-04-editada.jpg" class="selector-img" onclick="cambiarImagenComparador(4)">
+        </figure>
+    </div>
+
+    <!-- Pie de página -->
+    <a name="contacto"></a>
+
+    <div style="height: 50vh; font-size: 20px; text-align: center; display: flex; align-items: center; justify-content: center">
+        <p> Si quieres contactarte conmigo,<br>no dudes en seguirme en mis redes sociales o escribirme al: 11 2302-4153</p>
+    </div>
+
+    <footer id="pie-pagina-contenedor">
+        <div id="pie-pagina-texto"><p>¿Querés que esos momentos queden<br>captados de la mejor manera? <br><span style="font-size: 22px">¡Contactá conmigo!</span></p></div>
+        <div id="redes-sociales">
+            <a href="https://es-la.facebook.com/ph.meni/"><img src="./imagenes/iconos/facebook.png"></a>
+            <a href="https://www.instagram.com/ph.meni/"><img src="./imagenes/iconos/instagram.png"></a>
+            <a href="https://wa.me/541123024153"><img src="./imagenes/iconos/whatsapp.png"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

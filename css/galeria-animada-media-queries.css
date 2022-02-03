@@ -1,0 +1,107 @@
+/* ----------------------------------------------------------------- 1700 px */
+@media screen and (max-width: 1700px){
+    /* ----------------- Contenedores  ----------------- */
+    .imagenes-container{
+        width: 20vw;
+    }
+
+    .imagenes{
+        width: 20vw;
+    }
+
+    #img-31{
+        display: none;
+    }
+
+    #img-32{
+        display: none;
+    }
+
+    #img-33{
+        display: none;
+    }
+
+    #img-34{
+        display: none;
+    }
+
+    #img-35{
+        display: none;
+    }
+
+    #img-36{
+        display: none;
+    }
+}
+
+/* ----------------------------------------------------------------- 1350 px */
+@media screen and (max-width: 1350px){
+    /* ----------------- Contenedores  ----------------- */
+    .imagenes-container{
+        width: 25vw;
+    }
+
+    .imagenes{
+        width: 25vw;
+    }
+
+    #img-31{
+        display: block;
+    }
+
+    #img-32{
+        display: block;
+    }
+
+    #img-33{
+        display: block;
+    }
+
+    #img-34{
+        display: block;
+    }
+
+    #img-35{
+        display: block;
+    }
+
+    #img-36{
+        display: block;
+    }
+
+    #arreglar-galeria{
+        height: 150vh;
+    }
+}
+
+/* ----------------------------------------------------------------- 960 px */
+@media screen and (max-width: 960px){
+    /* ----------------- Contenedores  ----------------- */
+    .imagenes-container{
+        width: 33.33vw;
+    }
+
+    .imagenes{
+        width: 33.33vw;
+    }
+
+    #arreglar-galeria{
+        height: 200vh;
+    }
+}
+
+/* ----------------------------------------------------------------- 720 px */
+@media screen and (max-width: 720px){
+    /* ----------------- Contenedores  ----------------- */
+    .imagenes-container{
+        width: 50vw;
+    }
+
+    .imagenes{
+        width: 50vw;
+    }
+
+    #arreglar-galeria{
+        height: 300vh;
+    }
+}
